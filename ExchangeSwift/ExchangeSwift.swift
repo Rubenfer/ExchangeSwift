@@ -95,8 +95,6 @@ public class ExchangeSwift {
         case ZAR
     }
     
-    private var api = "https://api.fixer.io/"
-    
     private func decodeJSON(_ url: URL, completionHandler: @escaping (Exchange)->()) {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -120,6 +118,7 @@ public class ExchangeSwift {
     
     public func getExchangeRate(base: currency, completion: @escaping (Exchange) -> () ) {
         
+        var api = "https://api.fixer.io/"
         api += "latest"
         api += "?base=\(base)"
         
@@ -134,6 +133,7 @@ public class ExchangeSwift {
     
     public func getHistorical(base: currency, day: String, month: String, year: String, completion: @escaping (Exchange) -> () ) {
         
+        var api = "https://api.fixer.io/"
         api += "\(year)-\(month)-\(day)"
         api += "?base=\(base)"
         

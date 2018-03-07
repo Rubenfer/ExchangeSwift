@@ -30,7 +30,7 @@ exchange.getExchangeRate(base: .EUR) { (exchange) in
 
 // Historical rate
 
-exchange.getHistorical(base: .EUR, day: 12, month: 10, year: 2001) { (exchange) in
+exchange.getHistorical(base: .EUR, day: "12", month: "10", year: "2001") { (exchange) in
 
     // Now you have the exchange rates of 10/12/2001
 
@@ -104,7 +104,7 @@ You can also copy into your project the file `ExchangeSwift.framework`
 
 
 ## Requirements
-iOS 9.0+ and Swift 4.0+ are required.
+iOS 8.0+ and Swift 4.0+ are required.
 
 ## Author
 
