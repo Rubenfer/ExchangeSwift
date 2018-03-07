@@ -1,0 +1,11 @@
+framework module ExchangeSwift {
+  umbrella header "ExchangeSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module ExchangeSwift.Swift {
+    header "ExchangeSwift-Swift.h"
+    requires objc
+}
