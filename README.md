@@ -9,6 +9,8 @@
 ## Description
 You need `ExchangeSwift` if you want to use updated exchange rate in your Swift app. ExchangeSwift update rates daily by European Central Bank. You can also see historical exchange rates since 1999.
 
+We use [Fixer API](https://github.com/fixerAPI/fixer).
+
 ## Usage
 Run the example project from the `Example` directory and check out `ViewController.swift`.
 
