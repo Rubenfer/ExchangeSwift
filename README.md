@@ -22,7 +22,7 @@ let exchange = ExchangeSwift()
 exchange.getExchangeRate(base: .EUR) { (exchange) in
 
     // Here your code. For example:
-    print("\(exchange.date): 1EUR = \(exchange.rates.USD)USD")"
+    print("\(exchange.date): 1EUR = \(exchange.rates.USD)USD")
 
 }
 
